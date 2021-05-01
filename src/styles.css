@@ -1,0 +1,204 @@
+.App {
+  font-family: cursive;
+  /* background: linear-gradient(#e66465, #9198e5); */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*  Navbar  CSS */
+.listitems {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 50px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+}
+.items {
+  margin-top: 0px;
+}
+.items:hover {
+  cursor: pointer;
+  color: orange;
+}
+#name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.line-1 {
+  position: relative;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  margin-left: 70px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.anim-typewriter {
+  animation: typewriter 6s steps(48) 1s 1 normal both,
+    blinkTextCursor 500ms steps(48) infinite normal;
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.2em;
+  }
+}
+/* Footer */
+.loveicon {
+  height: 16px;
+  width: 16px;
+  margin-top: 3px;
+}
+.socialmediaicons {
+  text-align: center;
+  justify-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+hr {
+  width: 33%;
+  color: white;
+  background-color: darkblue;
+}
+/* About section*/
+.bold {
+  font-weight: bold;
+}
+.outerbox {
+  padding: 6vw;
+}
+.boxabout {
+  background-color: white;
+  box-shadow: 3px 3px 4px 3px black;
+}
+.fonthire {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+.btnhire {
+  font-size: 25px;
+  border-radius: 7%;
+}
+.btnhire:hover {
+  outline: none;
+  background-color: #0066cc;
+  border-radius: 7%;
+}
+.clickbtn {
+  outline: none;
+  border: none;
+}
+.box-myimage {
+  padding: 10px;
+}
+.ss {
+  background-color: rgb(38, 100, 129);
+  height: 50px;
+}
+.navtab {
+  color: white;
+}
+.navtab:hover {
+  background-color: lightskyblue;
+  color: darkblue;
+}
+/* Work experinece css */
+.cardConatiner {
+  box-shadow: 6px 6px 3px 1px black;
+  background-color: rgb(247, 236, 236);
+  border-radius: 7px;
+}
+.sizetab {
+  padding: 2vw;
+}
+.t {
+  background-color: rebeccapurple;
+  text-align: center;
+}
+
+nav {
+  background-color: #c41533;
+  overflow: hidden;
+  padding: 1em;
+  border-bottom: 3px solid #ffae03;
+}
+nav a {
+  color: #fff;
+}
+
+nav .navWide {
+  display: none;
+  margin: 0 auto;
+}
+
+nav .navWide .wideDiv {
+  text-align: center;
+}
+
+nav .navWide .wideDiv a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 2em;
+}
+
+nav .navNarrow i {
+  float: left;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav .navNarrow .narrowLinks a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear: left;
+  padding: 1em 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links.*/
+@media (min-width: 480px) {
+  nav .navWide {
+    display: block;
+  }
+
+  nav .navNarrow {
+    display: none;
+  }
+}
